@@ -15,7 +15,7 @@
                     <label>名称</label>
                     <input type="text" required name="name" ng-model="server.name">
                     <div ng-messages="serverForm.name.$error">
-                        <div ng-message="required">名称不能为空</div>
+                        <div ng-message="required">Field is required</div>
                     </div>
                 </md-input-container>
                 <md-input-container class="md-block">
@@ -26,21 +26,21 @@
                     <label>地址</label>
                     <input type="text" required name="address" ng-model="server.address">
                     <div ng-messages="serverForm.address.$error">
-                        <div ng-message="required">地址不能为空</div>
+                        <div ng-message="required">Field is required</div>
                     </div>
                 </md-input-container>
                 <md-input-container class="md-block">
                     <label>端口</label>
                     <input type="text" required name="port" ng-model="server.port">
                     <div ng-messages="serverForm.port.$error">
-                        <div ng-message="required">端口不能为空</div>
+                        <div ng-message="required">Field is required</div>
                     </div>
                 </md-input-container>
                 <md-input-container class="md-block">
                     <label>密码</label>
                     <input type="text" required name="password" ng-model="server.password">
                     <div ng-messages="serverForm.password.$error">
-                        <div ng-message="required">密码不能为空</div>
+                        <div ng-message="required">Field is required</div>
                     </div>
                 </md-input-container>
                 <md-input-container class="md-block" ng-if="server.type === 'WireGuard'">
@@ -75,14 +75,14 @@
                     <label>流量倍率</label>
                     <input type="text" required name="scale" ng-model="server.scale">
                     <div ng-messages="serverForm.scale.$error">
-                        <div ng-message="required">流量倍率不能为空</div>
+                        <div ng-message="required">Field is required</div>
                     </div>
                 </md-input-container>
                 <md-input-container class="md-block" ng-if="server.type === 'Shadowsocks'">
                     <label>端口偏移</label>
                     <input type="number" required name="shift" ng-model="server.shift">
                     <div ng-messages="serverForm.shift.$error">
-                        <div ng-message="required">端口偏移量不能为空</div>
+                        <div ng-message="required">Field is required</div>
                     </div>
                 </md-input-container>
                 <div style="width: 100%;" layout="row" layout-align="space-between center">
